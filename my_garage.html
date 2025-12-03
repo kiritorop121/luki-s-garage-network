@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Garage - Luki's Garage Network</title>
+    <meta name="description" content="Manage your vehicle's Digital Build Sheet, track modifications, and view history. The central hub for your high-performance projects.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">LUKI'S <span>GARAGE</span> NETWORK</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my_garage.html" class="active">My Garage</a></li>
+                    <li><a href="technical_library.html">Library</a></li>
+                    <li><a href="parts_tools.html">Parts & Tools</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 id="garage-heading">My Garage Dashboard</h1>
+        <p style="color: var(--color-text-faded);">Welcome back, User! Manage your saved vehicles and recent activity.</p>
+        
+        <section style="margin-top: 2rem;">
+            <h2>Current Vehicle: 2018 Subaru WRX STI (Track Build)</h2>
+            <div class="grid-layout" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                
+                <div class="card">
+                    <h3 style="color: var(--color-secondary-accent);">Digital Build Sheet</h3>
+                    <p>Total Mods Logged: 17</p>
+                    <p>Next Maintenance: Oil Change (300 mi)</p>
+                    <p class="data-field" style="margin-top: 0.5rem;">VIN: JxxxxRxxxxE</p>
+                    <a href="#" class="btn" style="margin-top: 1rem; padding: 0.5rem 1rem;">View Full Ledger</a>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: var(--color-secondary-accent);">Quick Links</h3>
+                    <ul style="list-style: disc; margin-left: 1.5rem; color: var(--color-text-faded);">
+                        <li><a href="technical_library.html" style="color: var(--color-tertiary-structure);">Search for 'Brake Bleeding'</a></li>
+                        <li><a href="parts_tools.html" style="color: var(--color-tertiary-structure);">Run Compatibility Check</a></li>
+                        <li><a href="community.html" style="color: var(--color-tertiary-structure);">Ask a Question on Forums</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: var(--color-secondary-accent);">Recent Activity</h3>
+                    <p style="margin-bottom: 0.5rem;">**Updated:** Added 'AEM Cold Air Intake' to Build Sheet.</p>
+                    <p style="margin-bottom: 0.5rem;">**Checked:** Verified N54 charge pipe installation guide.</p>
+                    <p>**Submitted:** New review for Specialist Shop 'Rally Prep'.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem;">
+            <h2 id="media-heading">Vehicle Selector & History</h2>
+            <div class="media-container">
+                <p>Use the selector below to switch between vehicles or add a new one to your network.</p>
+                
+                <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <select id="vehicle-selector" style="padding: 0.75rem; background-color: #333; color: var(--color-text-light); border-radius: 4px;">
+                        <option value="wrx-sti">2018 Subaru WRX STI</option>
+                        <option value="m3">2005 BMW E46 M3</option>
+                        <option value="mustang">1967 Ford Mustang (Project)</option>
+                    </select>
+                    <button class="btn" style="background-color: #444; color: var(--color-text-light);">+ Add New Vehicle</button>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>If you have any questions or comments please contact the <a href="mailto:webmaster@lukisgarage.net">webmaster</a>.</p>
+            <p>&copy; 2024 Luki's Garage Network. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="project_docs.html">Project Documentation</a>
+            </div>
+            <p style="font-size: 0.75rem; color: #555555; margin-top: 1rem;">
+                Notice: This is not a real company, this web site was developed for a class project.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
